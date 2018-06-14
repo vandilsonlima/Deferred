@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Deferred_Tests' do
+  pod 'Deferred', :path => '../'
+  
+  
+end
