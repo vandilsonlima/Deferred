@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Deferred'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Deferred.'
+  s.summary          = 'An alternative to completion handlers'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/vandilson.lim4@gmail.com/Deferred'
+  s.homepage         = 'https://github.com/vandilsonlima/Deferred'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vandilson.lim4@gmail.com' => 'vandilson.lima@dextra-sw.com' }
-  s.source           = { :git => 'https://github.com/vandilson.lim4@gmail.com/Deferred.git', :tag => s.version.to_s }
+  s.author           = { 'Vandilson Lima' => 'vandilson.lim4@gmail.com' }
+  s.source           = { :git => 'https://github.com/vandilsonlima/Deferred.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

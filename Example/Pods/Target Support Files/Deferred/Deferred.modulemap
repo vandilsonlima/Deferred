@@ -1,0 +1,6 @@
+framework module Deferred {
+  umbrella header "Deferred-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Deferred (0.1.0)
+
+DEPENDENCIES:
+  - Deferred (from `../`)
+
+EXTERNAL SOURCES:
+  Deferred:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Deferred: 9d869df16b88652ceed435d34508a1cca48df8b0
+
+PODFILE CHECKSUM: 7e93a8e1e78f126baa9879e88ae391f8aa8947fc
+
+COCOAPODS: 1.5.3
