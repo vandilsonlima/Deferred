@@ -1,28 +1,38 @@
-# Deferred
-
-[![CI Status](https://img.shields.io/travis/vandilson.lim4@gmail.com/Deferred.svg?style=flat)](https://travis-ci.org/vandilson.lim4@gmail.com/Deferred)
-[![Version](https://img.shields.io/cocoapods/v/Deferred.svg?style=flat)](https://cocoapods.org/pods/Deferred)
-[![License](https://img.shields.io/cocoapods/l/Deferred.svg?style=flat)](https://cocoapods.org/pods/Deferred)
-[![Platform](https://img.shields.io/cocoapods/p/Deferred.svg?style=flat)](https://cocoapods.org/pods/Deferred)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 Deferred is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Deferred'
+pod 'Deferred', :git => 'https://github.com/vandilsonlima/Deferred.git', :branch => 'master'
 ```
+
+### We can use it like this:
+
+```swift
+async {
+    let value = task().await().value
+    let value2 = task2(value).await().value
+    let value3 = task3(value2).await().value
+    print(value3)
+}
+```
+
+### Instead of this:
+```swift
+task { value in
+    task2(value) { value2 in
+        task3(value2) { value3 in
+            print(value3)
+        }
+    }
+}
+```
+
 
 ## Author
 
-vandilson.lim4@gmail.com, vandilson.lima@dextra-sw.com
+Vandilson Lima, vandilson.lim4@gmail.com
 
 ## License
 
